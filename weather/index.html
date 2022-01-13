@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="search_bar">
+            <input type="text" placeholder="Enter city" class="search" id="place">
+            <button id="submit" class="search_btn">&#128269;</button>
+        </div>
+
+        <div class="container two_containers">
+            <div id="intro" class="intro">
+                <span class="greetings">Let's search for today's weather.</span>
+            </div>
+            <div class="left_container">
+                <div class="image_container">
+                    <div class="image_wrapper">
+                        <img class="image" id="image" src="" alt="">
+                    </div>
+                    <a class="image_author" id="image_author" href="" ></a>
+                </div>
+                
+                <div class="forecast_container">
+                    <div class="days_container">
+                        <p class="fr_day" id="day_1">tomorrow</p>
+                            <p class="fr_text"id="day_1_condition">partily cloudly</p>
+                            <p class="fr_text" id="day_1_temp">6°C/7°C</p>
+                        <p class="fr_text" id="day_1_rain">98%</p>
+                    </div>
+                    <div class="days_container">
+                        <p class="fr_day" id="day_2">06/01</p>
+                        <p class="fr_text"id="day_2_condition">partily cloudly</p>
+                        <p class="fr_text" id="day_2_temp">6°C/7°C</p>
+                        <p class="fr_text" id="day_2_rain">98%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right_container today_container">
+                    <div class="condition">
+                        <p class="light" id="condition">Partly Cloudly</p>
+                        <p class="big_bold" id="temperature">4°C</p>
+                    </div>
+                    <div class="rain">
+                        <p class="label" >chance of rain</p>
+                    </div>
+                    <div class="rainresult">
+                        <p class="value" id="rain">0%</p>
+                    </div>
+                    <div class="feel">
+                        <p class="label">feels like</p>
+                        <p class="value" id="feels">1°C</p>
+                    </div>
+
+                    <div class="wind">
+                        <p class="label">wind</p>
+                        <p class="value" id="wind">100 KMPH</p>
+                    </div>
+                    
+                    <div class="visiblity">
+                        <p class="label">visiblity</p>
+                        <p class="value" id="visiblity">10 KM</p>
+                    </div>
+                    
+                    <div class="sunrise">
+                        <p class="label">Sun Rise</p>
+                        <p class="value" id="sunrise">08:00 AM</p>
+                    </div>
+
+
+                    <div class="humidity">
+                        <p class="label">humidity</p>
+                        <p class="value" id="humidity">88%</p>
+                    </div>
+                    <div class="pressure">
+                        <p class="label">pressure</p>
+                        <p class="value" id="pressure">100 MBAR</p>
+                    </div>
+                    <div class="uv">
+                        <p class="label">uv</p>
+                        <p class="value" id="uv">0</p>
+                    </div>
+                    <div class="sunset">
+                        <p class="label">Sun Set</p>
+                        <p class="value" id="sunset">08:00 AM</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
